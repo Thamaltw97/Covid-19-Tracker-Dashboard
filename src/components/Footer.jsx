@@ -7,7 +7,7 @@ const FooterHandler = () => {
         <MDBFooter color="blue" className="footer font-small pt-1 mt-2">
             <div className="footer-copyright text-center py-1">
                 <MDBContainer fluid>
-                    Made with ❤ by Thamal Wijetunge.
+                    Made with ❤ by Thamal Wijetunge | Source by hpb.health.gov.lk
                 </MDBContainer>
             </div>
         </MDBFooter>

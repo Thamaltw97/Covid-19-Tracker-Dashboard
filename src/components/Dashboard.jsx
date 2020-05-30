@@ -54,7 +54,7 @@ class Dashboard extends Component {
                     </div>
                 </div>
 
-                <br />
+                {/* <br /> */}
 
                 <Tabs>
                     <TabList style={{ width: '90%', margin: '1rem auto', height: '25px' }}>
@@ -64,6 +64,9 @@ class Dashboard extends Component {
 
                     <TabPanel>
                         <br />
+
+                        {/* Total Figures of Sri Lanka */}
+
                         <div className="row" style={{ width: '91%', margin: '0rem auto' }}>
                             <div className="col-md-12" >
                                 <fieldset className="custom-border bg-white">
@@ -117,10 +120,8 @@ class Dashboard extends Component {
                             </div>
                         </div>
 
+                        {/* New Figures of Sri Lanka */}
 
-
-
-                        <br />
                         <div className="row" style={{ width: '91%', margin: '0rem auto' }}>
                             <div className="col-md-6" >
                                 <fieldset className="custom-border bg-white">
@@ -186,6 +187,8 @@ class Dashboard extends Component {
 
                         <br />
 
+                        {/* Total Figures of World */}
+
                         <div className="row" style={{ width: '91%', margin: '0rem auto' }}>
                             <div className="col-md-12" >
                                 <fieldset className="custom-border bg-white">
@@ -229,6 +232,7 @@ class Dashboard extends Component {
                             </div>
                         </div>
 
+                        {/* New Figures of World */}
 
                         <div className="row" style={{ width: '91%', margin: '0rem auto' }}>
                             <div className="col-md-6" >
