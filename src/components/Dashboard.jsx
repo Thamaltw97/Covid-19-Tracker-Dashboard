@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import Axios from 'axios';
-// import Paper from '@material-ui/core/Paper';
-// import Tabs from '@material-ui/core/Tabs';
-// import Tab from '@material-ui/core/Tab';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import TotalCasesImage from '../images/icon-4.d002c132.gif';
@@ -10,7 +7,6 @@ import LocalDeaths from '../images/icon-1.403b9d8b.gif';
 import LocalRecovered from '../images/icon-3.1348ba98.gif';
 import LocalHospitalized from '../images/icon-5.5c1a2221.gif';
 import PcrTest from '../images/eye_transparent.gif';
-//import etst from '../images/'
 
 class Dashboard extends Component {
 
@@ -71,7 +67,7 @@ class Dashboard extends Component {
                         <div className="row" style={{ width: '91%', margin: '0rem auto' }}>
                             <div className="col-md-12" >
                                 <fieldset className="custom-border bg-white">
-                                    <legend className="custom-border">Total Figures</legend>
+                                    <legend className="custom-border">Total Figures - Sri Lanka</legend>
 
                                     <div className="row" style={{ width: '100%', margin: '2rem auto' }}>
                                         <div className="col-md-3">
@@ -128,7 +124,7 @@ class Dashboard extends Component {
                         <div className="row" style={{ width: '91%', margin: '0rem auto' }}>
                             <div className="col-md-6" >
                                 <fieldset className="custom-border bg-white">
-                                    <legend className="custom-border">New Figures</legend>
+                                    <legend className="custom-border">New Figures - Sri Lanka</legend>
 
                                     <div className="row" style={{ width: '100%', margin: '2rem auto' }}>
 
@@ -160,7 +156,7 @@ class Dashboard extends Component {
 
                             <div className="col-md-4" >
                                 <fieldset className="custom-border bg-white">
-                                    <legend className="custom-border">PCR Tests</legend>
+                                    <legend className="custom-border">PCR Tests - Sri Lanka</legend>
 
                                     <div className="row" style={{ width: '100%', margin: '2rem auto' }}>
 
@@ -185,20 +181,44 @@ class Dashboard extends Component {
 
 
 
-                        {/* <div className="row" style={{ width: '91%', margin: '0rem auto' }}>
-                            <div className="col-md-6" >
+                    </TabPanel>
+                    <TabPanel>
+
+                        <br />
+
+                        <div className="row" style={{ width: '91%', margin: '0rem auto' }}>
+                            <div className="col-md-12" >
                                 <fieldset className="custom-border bg-white">
-                                    <legend className="custom-border">PCR Tests</legend>
+                                    <legend className="custom-border">Total Figures - World</legend>
 
                                     <div className="row" style={{ width: '100%', margin: '2rem auto' }}>
-
-                                        <div className="col-md-6">
+                                        <div className="col-md-4">
                                             <div className="card bg-light border border-primary">
                                                 <div className="card-body">
-                                                    <img src={LocalRecovered} alt="card icon" className="figures-icon" style={{ maxWidth: '20%' }}></img>
+                                                    <img src={TotalCasesImage} alt="card icon" className="figures-icon" style={{ maxWidth: '18%' }}></img>
 
-                                                    <h3>Total PCR Test Count</h3>
-                                                    <h1>{this.state.statistics.total_pcr_testing_count}</h1>
+                                                    <h3>Total Confirmed Cases</h3>
+                                                    <h1>{this.state.statistics.global_total_cases}</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div className="col-md-4">
+                                            <div className="card bg-light border border-danger">
+                                                <div className="card-body">
+                                                    <img src={LocalDeaths} alt="card icon" className="figures-icon" style={{ maxWidth: '18%' }}></img>
+                                                    <h3>Total Deaths</h3>
+                                                    <h1>{this.state.statistics.global_deaths}</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="col-md-4">
+                                            <div className="card bg-light border border-success">
+                                                <div className="card-body">
+                                                    <img src={LocalRecovered} alt="card icon" className="figures-icon" style={{ maxWidth: '18%' }}></img>
+                                                    <h3>Recovered & Discharged</h3>
+                                                    <h1>{this.state.statistics.global_recovered}</h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -207,15 +227,44 @@ class Dashboard extends Component {
 
                                 </fieldset>
                             </div>
-                        </div> */}
+                        </div>
 
 
+                        <div className="row" style={{ width: '91%', margin: '0rem auto' }}>
+                            <div className="col-md-6" >
+                                <fieldset className="custom-border bg-white">
+                                    <legend className="custom-border">New Figures - World</legend>
+
+                                    <div className="row" style={{ width: '100%', margin: '2rem auto' }}>
+
+                                        <div className="col-md-6">
+                                            <div className="card bg-light border border-primary">
+                                                <div className="card-body">
+                                                    <img src={TotalCasesImage} alt="card icon" className="figures-icon" style={{ maxWidth: '20%' }}></img>
+
+                                                    <h3>New Cases</h3>
+                                                    <h1>{this.state.statistics.global_new_cases}</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div className="col-md-6">
+                                            <div className="card bg-light border border-danger">
+                                                <div className="card-body">
+                                                    <img src={LocalDeaths} alt="card icon" className="figures-icon" style={{ maxWidth: '20%' }}></img>
+                                                    <h3>New Deaths</h3>
+                                                    <h1>{this.state.statistics.global_new_deaths}</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </fieldset>
+                            </div>
+                        </div>
 
 
-
-                    </TabPanel>
-                    <TabPanel>
-                        <h2>Any content 2</h2>
                     </TabPanel>
                 </Tabs>
 
