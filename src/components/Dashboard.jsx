@@ -35,17 +35,17 @@ class Dashboard extends Component{
 
             <div>
 
-            <div className="container pt-3" >
-                <div className="card bg-light">
-                    <div className="card-body" align="center">
-                        <h2>COVID-19 : Live Situational Analysis Dashboard</h2>
-                        <br/>
-                        <span className="badge p-2" style={{ background: '#ffffff' }}>
-                            <h5>Last Update Time : {this.state.statistics.update_date_time}</h5>
-                        </span>
+                <div className="container pt-3" >
+                    <div className="card bg-light">
+                        <div className="card-body" align="center">
+                            <h2>COVID-19 : Live Situational Analysis Dashboard</h2>
+                            <br/>
+                            <span className="badge p-2" style={{ background: '#ffffff' }}>
+                                <h5>Last Update Time : {this.state.statistics.update_date_time}</h5>
+                            </span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
             </div>
 
