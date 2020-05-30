@@ -47,8 +47,8 @@ class Dashboard extends Component {
                         <div className="card-body" align="center" >
                             <h2>COVID-19 : Live Situational Analysis Dashboard</h2>
                             <br />
-                            <span className="badge p-2" style={{ background: '#ffffff' }}>
-                                <h5>Last Update Time : {this.state.statistics.update_date_time}</h5>
+                            <span className="badge p-1" style={{ background: '#ffffff' }}>
+                                <p style={{ fontSize: '15px' }}>Last Update Time : {this.state.statistics.update_date_time}</p>
                             </span>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ class Dashboard extends Component {
                                                     <img src={TotalCasesImage} alt="card icon" className="figures-icon" style={{ maxWidth: '20%' }}></img>
 
                                                     <h3>Total Confirmed Cases</h3>
-                                                    <h1>{this.state.statistics.local_total_cases}</h1>
+                                                    <h1 style={{ color: '#1a8cff' }}>{this.state.statistics.local_total_cases}</h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -86,7 +86,7 @@ class Dashboard extends Component {
                                                 <div className="card-body">
                                                     <img src={LocalDeaths} alt="card icon" className="figures-icon" style={{ maxWidth: '20%' }}></img>
                                                     <h3>Total Deaths</h3>
-                                                    <h1>{this.state.statistics.local_deaths}</h1>
+                                                    <h1 style={{ color: '#ff3333' }}>{this.state.statistics.local_deaths}</h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -96,7 +96,7 @@ class Dashboard extends Component {
                                                 <div className="card-body">
                                                     <img src={LocalRecovered} alt="card icon" className="figures-icon" style={{ maxWidth: '20%' }}></img>
                                                     <h3>Recovered & Discharged</h3>
-                                                    <h1>{this.state.statistics.local_recovered}</h1>
+                                                    <h1 style={{ color: '#33cc33' }}>{this.state.statistics.local_recovered}</h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -106,7 +106,7 @@ class Dashboard extends Component {
                                                 <div className="card-body">
                                                     <img src={LocalHospitalized} alt="card icon" className="figures-icon" style={{ maxWidth: '20%' }}></img>
                                                     <h3>Suspected & Hospitalized</h3>
-                                                    <h1>{this.state.statistics.local_total_number_of_individuals_in_hospitals}</h1>
+                                                    <h1 style={{ color: '#ff3300' }}>{this.state.statistics.local_total_number_of_individuals_in_hospitals}</h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -134,7 +134,7 @@ class Dashboard extends Component {
                                                     <img src={TotalCasesImage} alt="card icon" className="figures-icon" style={{ maxWidth: '20%' }}></img>
 
                                                     <h3>New Cases</h3>
-                                                    <h1>{this.state.statistics.local_new_cases}</h1>
+                                                    <h1 style={{ color: '#1a8cff' }}>{this.state.statistics.local_new_cases}</h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -144,7 +144,7 @@ class Dashboard extends Component {
                                                 <div className="card-body">
                                                     <img src={LocalDeaths} alt="card icon" className="figures-icon" style={{ maxWidth: '20%' }}></img>
                                                     <h3>New Deaths</h3>
-                                                    <h1>{this.state.statistics.local_new_deaths}</h1>
+                                                    <h1 style={{ color: '#ff3333' }}>{this.state.statistics.local_new_deaths}</h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -166,7 +166,7 @@ class Dashboard extends Component {
                                                     <img src={PcrTest} alt="card icon" className="figures-icon" style={{ maxWidth: '20%' }}></img>
 
                                                     <h3>Total PCR Test Count</h3>
-                                                    <h1>{this.state.statistics.total_pcr_testing_count}</h1>
+                                                    <h1 style={{ color: '#1a0d00' }}>{this.state.statistics.total_pcr_testing_count}</h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -198,7 +198,7 @@ class Dashboard extends Component {
                                                     <img src={TotalCasesImage} alt="card icon" className="figures-icon" style={{ maxWidth: '18%' }}></img>
 
                                                     <h3>Total Confirmed Cases</h3>
-                                                    <h1>{this.state.statistics.global_total_cases}</h1>
+                                                    <h1 style={{ color: '#1a8cff' }}>{this.state.statistics.global_total_cases}</h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -208,7 +208,7 @@ class Dashboard extends Component {
                                                 <div className="card-body">
                                                     <img src={LocalDeaths} alt="card icon" className="figures-icon" style={{ maxWidth: '18%' }}></img>
                                                     <h3>Total Deaths</h3>
-                                                    <h1>{this.state.statistics.global_deaths}</h1>
+                                                    <h1 style={{ color: '#ff3333' }}>{this.state.statistics.global_deaths}</h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -243,7 +243,7 @@ class Dashboard extends Component {
                                                     <img src={TotalCasesImage} alt="card icon" className="figures-icon" style={{ maxWidth: '20%' }}></img>
 
                                                     <h3>New Cases</h3>
-                                                    <h1>{this.state.statistics.global_new_cases}</h1>
+                                                    <h1 style={{ color: '#1a8cff' }}>{this.state.statistics.global_new_cases}</h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -253,7 +253,7 @@ class Dashboard extends Component {
                                                 <div className="card-body">
                                                     <img src={LocalDeaths} alt="card icon" className="figures-icon" style={{ maxWidth: '20%' }}></img>
                                                     <h3>New Deaths</h3>
-                                                    <h1>{this.state.statistics.global_new_deaths}</h1>
+                                                    <h1 style={{ color: '#ff3333' }}>{this.state.statistics.global_new_deaths}</h1>
                                                 </div>
                                             </div>
                                         </div>
